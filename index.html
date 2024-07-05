@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
 		Rock Paper Scissors
 	</title>
 	<link
@@ -14,67 +14,85 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+</head>
 <body>
-  <main class="game-container">
-    <header>
-      <h1>Rock Paper Scissors</h1>
-      <article class="score-container">
-        <h2>PLAYER SCORE: <span id="player-score">0</span></h2>
-        <h2>BOT SCORE: <span id="bot-score">0</span></h2>
+  <header>
+    <h1>ROCK</h1>
+    <h1>PAPER</h1>
+    <h1>SCISSORS</h1>
+  </header>
+  <main class="container">
+    <section class="game-header">
+      <article class="scoreboard container">
+        <div class="head">
+          <h3>SCOREBOARD</h3>
+        </div>
+        <div class="scores container">
+          <div class="score">
+            <p>PLAYER</p>
+            <span id="player-score">0</span>
+          </div>
+          <div class="score">
+            <p>BOT</p>
+            <span id="bot-score">0</span>
+          </div>
+        </div>
       </article>
-    </header>
-    <section class="game">
-      <h3 id="directions">CHOOSE TO BEGIN</h3>
-      <article class="btn-container">
-				<button type="button" id="rock" title="rock">
-					<img
-						id="rock-img"
-						src="https://i.postimg.cc/nz2xktpp/rock.png"
-						alt="rock"
-					/>
-				</button>
-				<button type="button" id="paper" title="paper">
-					<img
-						id="paper-img"
-						src="https://i.postimg.cc/DZGSx0mL/paper.png"
-						alt="paper"
-					/>
-				</button>
-				<button type="button" id="scissors" title="scissors">
-					<img
-						id="scissors-img"
-						src="https://i.postimg.cc/HsRg3zDc/scissors.png"
-						alt="scissors"
-					/>
-				</button>
-			</article>
-      <article class="results-container">
-        <div class="msg-container">
-					<h3 id="winner-msg"></h3>
-					<h4 id="results-msg"></h4>
-				</div>
-        <div class="results">
-					<div class="result">
-						<p>PLAYER CHOSE</p>
-						<img
-							id="player-result-img"
-							src="https://i.postimg.cc/nz2xktpp/rock.png"
-						/>
-					</div>
-					<div class="result">
-						<p>BOT CHOSE</p>
-						<img
-							id="bot-result-img"
-							src="https://i.postimg.cc/nz2xktpp/rock.png"
-						/>
-					</div>
-				</div>
+    </section>
+    <section class="game container">
+      <h2 id="directions">CHOOSE TO BEGIN</h2>
+      <article class="choice container">
+        <button type="button" id="rock" title="rock">
+          <img
+            id="rock-img"
+            src="https://i.postimg.cc/nz2xktpp/rock.png"
+            alt="rock"
+          />
+        </button>
+        <button type="button" id="paper" title="paper">
+          <img
+            id="paper-img"
+            src="https://i.postimg.cc/DZGSx0mL/paper.png"
+            alt="paper"
+          />
+        </button>
+        <button type="button" id="scissors" title="scissors">
+          <img
+            id="scissors-img"
+            src="https://i.postimg.cc/HsRg3zDc/scissors.png"
+            alt="scissors"
+          />
+        </button>
+      </article>
+      <article class="results container">
+        <div class="msg container">
+          <h2 id="winner-msg"></h2>
+					<h2 id="results-msg"></h2>
+        </div>
+        <div class="chosen container">
+          <div class="chose">
+            <p>PLAYER <br>CHOSE</p>
+            <img
+              id="player-result-img"
+              src="https://i.postimg.cc/nz2xktpp/rock.png"
+              alt="player choice"
+            />
+          </div>
+          <div class="chose">
+            <p>BOT <br>CHOSE</p>
+            <img
+              id="bot-result-img"
+              src="https://i.postimg.cc/nz2xktpp/rock.png"
+              alt="bot choice"
+            />
+          </div>
+        </div>
         <button type="button" class="btn" id="next-round-btn">
-					Next Round
-				</button>
+          NEXT ROUND
+        </button>
         <button type="button" class="btn" id="reset-game-btn">
-					Play Again?
-				</button>
+          PLAY AGAIN?
+        </button>
       </article>
     </section>
   </main>

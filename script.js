@@ -1,7 +1,7 @@
 //assigning elements
 //containers
-const btnContainer = document.querySelector('.btn-container');
-const resultsContainer = document.querySelector('.results-container');
+const choiceContainer = document.querySelector('.choice');
+const resultsContainer = document.querySelector('.results');
 //updating string elements
 const playerScoreSpan = document.getElementById('player-score');
 const botScoreSpan = document.getElementById('bot-score');
@@ -88,8 +88,8 @@ function showResults(playerChoice) {
   resultsMsgElement.innerText = getResults(playerChoice);
   playerScoreSpan.innerText = playerScore;
   botScoreSpan.innerText = botScore;
-  btnContainer.style.display = 'none';
-  resultsContainer.style.display = 'block';
+  choiceContainer.style.display = 'none';
+  resultsContainer.style.display = 'flex';
   directions.style.display = 'none';
   playerChoiceImg.src = updatePlayerChoiceImg(playerChoice);
 
@@ -99,7 +99,7 @@ function showResults(playerChoice) {
     winnerMsgElement.innerText = 
       `${ playerScore === 3
           ? 'You won the game!'
-          : 'The Bot won the game. Better luck next time!'
+          : 'The Bot won the game. \nBetter luck next time!'
       }`;
   }
 }
@@ -107,7 +107,7 @@ function showResults(playerChoice) {
 function nextRound() {
   directions.innerText = 'CHOOSE AN OPTION';
   directions.style.display = 'block';
-  btnContainer.style.display = 'flex';
+  choiceContainer.style.display = 'flex';
   resultsContainer.style.display = 'none';
 }
 
@@ -119,7 +119,7 @@ function resetGame() {
   directions.innerText = 'CHOOSE TO BEGIN';
   directions.style.display = 'block'
   resetBtn.style.display = 'none';
-  btnContainer.style.display = 'flex';
+  choiceContainer.style.display = 'flex';
   resultsContainer.style.display = 'none';
 
   resultsMsgElement.innerText = '';
