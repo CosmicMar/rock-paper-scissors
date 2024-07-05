@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   padding: 1rem;
   background-color: rgb(48, 48, 48);
   color: white;
