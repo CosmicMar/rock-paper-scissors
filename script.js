@@ -75,7 +75,7 @@ function getResults(playerChoice) {
     nextRoundBtn.innerText = 'Next Round';
     return `You win this round! \n ${playerChoice} beats ${botChoice}`;
   } else if (playerChoice === botChoice) {
-    nextRoundBtn.innerText = 'Try Again';
+    nextRoundBtn.innerText = 'TRY AGAIN';
     return `It's a tie! \n Both chose ${playerChoice} \n Try again.`;
   } else {
     botScore++;
