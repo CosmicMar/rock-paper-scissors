@@ -228,6 +228,10 @@ main {
     justify-content: center;
   }
 
+  .chosen {
+    padding-inline: 8rem;
+  }
+
   .choice {
     flex-direction: row;
     justify-content: space-evenly;
