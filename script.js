@@ -112,8 +112,8 @@ function nextRound() {
 }
 
 function resetGame() {
-  let playerScore = 0;
-  let botScore = 0;
+  playerScore = 0;
+  botScore = 0;
   playerScoreSpan.innerText = playerScore;
   botScoreSpan.innerText = botScore;
   directions.innerText = 'CHOOSE TO BEGIN';
