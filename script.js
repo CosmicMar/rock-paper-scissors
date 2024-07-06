@@ -119,6 +119,7 @@ function resetGame() {
   directions.innerText = 'CHOOSE TO BEGIN';
   directions.style.display = 'block'
   resetBtn.style.display = 'none';
+  nextRoundBtn.style.display = 'block';
   choiceContainer.style.display = 'flex';
   resultsContainer.style.display = 'none';
 
